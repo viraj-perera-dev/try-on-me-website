@@ -34,7 +34,7 @@ export function Logo({ className }) {
         animationData={animationData}
         loop={false}
         autoplay={true}
-        style={{ width: 120, height: 100 }}
+        style={{ width: 120, height: 120, translate: '0px -30px' }}
       />
     </div>
   )
