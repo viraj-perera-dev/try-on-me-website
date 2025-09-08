@@ -4,8 +4,6 @@ import { forwardRef } from 'react'
 
 export const Link = forwardRef(function Link(props, ref) {
   return (
-    <Headless.DataInteractive>
-      <NextLink ref={ref} {...props} />
-    </Headless.DataInteractive>
+    <Headless.DataInteractive as={NextLink} ref={ref} {...props} />
   )
 })
