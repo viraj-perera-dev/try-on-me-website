@@ -12,10 +12,11 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
+  { href: '#pricing', label: 'Pricing' },
+  { href: '/investors', label: 'Investors' },
   { href: '/blog', label: 'Blog' },
-  { href: '/login', label: 'Login' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/studio', label: 'Login' },
 ]
 
 function DesktopNav() {
@@ -82,8 +83,9 @@ export function Navbar({ banner }) {
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
-              <Link href="/" title="Home">
+              <Link href="/" title="Home" className="flex flex-col items-center">
                 <Logo className="h-16" />
+                <span className="text-lg font-medium text-gray-950 absolute bottom-1">Try On Me</span>
               </Link>
             </PlusGridItem>
             {banner && (

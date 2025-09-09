@@ -19,6 +19,7 @@
     "feed": "^5.1.0",
     "framer-motion": "^12.23.11",
     "lottie-react": "^2.4.1",
+    "motion": "^12.23.12",
     "next": "15.4.4",
     "next-sanity": "^10.0.5",
     "react": "^19",
