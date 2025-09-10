@@ -13,10 +13,9 @@ import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
   { href: '#pricing', label: 'Pricing' },
-  { href: '/investors', label: 'Investors' },
   { href: '/blog', label: 'Blog' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
-  { href: '/studio', label: 'Login' },
 ]
 
 function DesktopNav() {

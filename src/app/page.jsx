@@ -1,12 +1,12 @@
+import { BeforeAfterSlider } from '@/components/before-after'
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
-import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LogoCluster } from '@/components/logo-cluster'
-import { Map } from '@/components/map'
+import { LottieAnimation } from '@/components/lottie-animation'
 import { Navbar } from '@/components/navbar'
 import Pricing from '@/components/pricing-cards'
 import { Testimonials } from '@/components/testimonials'
@@ -106,19 +106,30 @@ function BentoSection() {
           title="See yourself in every outfit"
           description="Customers upload their photo and instantly see how any clothing item looks on them with realistic AI-powered virtual try-on technology."
           graphic={
-            <div className="h-80 bg-[url(/video/try-on-demo-poster.png)] bg-size-[1000px_560px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="flex size-full items-center justify-center p-8">
+              <BeforeAfterSlider
+                beforeImage="/images/before-tryon.png"
+                afterImage="/images/after-tryon.png"
+                beforeAlt="Customer without the outfit"
+                afterAlt="Customer wearing the virtual outfit"
+              />
+            </div>
           }
-          fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
           eyebrow="Analytics"
           title="Track your success"
+          available={false}
           description="Monitor try-on usage, conversion rates, and return reduction with detailed analytics dashboard. See how virtual try-ons boost your sales."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/analytics-dashboard.png)] bg-size-[1100px_650px] bg-position-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="flex size-full items-center justify-center p-8">
+              <LottieAnimation
+                src="/lottie/Marketing Tools.json"
+                style={{ width: '145%', height: '145%' }}
+              />
+            </div>
           }
-          fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
@@ -126,8 +137,11 @@ function BentoSection() {
           title="Install in minutes"
           description="One-click Shopify installation with no coding required. Works seamlessly with any theme and integrates directly into product pages."
           graphic={
-            <div className="flex size-full pt-10 pl-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
+            <div className="flex size-full items-center justify-center p-8">
+              <LottieAnimation
+                src="/lottie/Rocket.json"
+                style={{ width: '100%', height: '100%' }}
+              />
             </div>
           }
           className="lg:col-span-2 lg:rounded-bl-4xl"
@@ -143,7 +157,14 @@ function BentoSection() {
           eyebrow="Performance"
           title="Lightning fast results"
           description="AI processing completes in 15-30 seconds with high-quality, realistic try-on images that customers can download and share."
-          graphic={<Map />}
+          graphic={
+            <div className="flex size-full items-center justify-center p-8">
+              <LottieAnimation
+                src="/lottie/Wardrobe.json"
+                style={{ width: '140%', height: '140%' }}
+              />
+            </div>
+          }
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>

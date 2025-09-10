@@ -23,6 +23,7 @@
     "next": "15.4.4",
     "next-sanity": "^10.0.5",
     "react": "^19",
+    "react-before-after-slider-component": "^1.1.8",
     "react-dom": "^19",
     "react-use-measure": "^2.1.7",
     "sanity": "^4.2.0"

@@ -12,18 +12,21 @@ function CallToAction() {
       <hgroup>
         <Subheading>Get started</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Ready to transform your store?
           <br />
-          Start your free trial today.
+          Install Try On Me today.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        Boost sales, reduce returns, and give your customers the confidence to
+        buy with virtual try-on technology.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
-          Get started
+        <Button
+          className="w-full sm:w-auto"
+          href="https://apps.shopify.com/try-on-me"
+        >
+          Install on Shopify
         </Button>
       </div>
     </div>
@@ -61,21 +64,18 @@ function Sitemap() {
       <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/investors">Investors</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
+          <SitemapLink href="/contact">Contact</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Support</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/contact">Contact</SitemapLink>
           <SitemapLink href="/faq">FAQ</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/license">MIT License</SitemapLink>
           <SitemapLink href="/privacy">Privacy policy</SitemapLink>
         </SitemapLinks>
       </div>
@@ -95,7 +95,7 @@ function DesignCredit() {
   return (
     <div className="flex items-center gap-2">
       <span className="text-sm/6 text-gray-950">Made with</span>
-      <HeartIcon className="size-4 text-red-500 animate-pulse" />
+      <HeartIcon className="size-4 animate-pulse text-red-500" />
       <span className="text-sm/6 text-gray-950">by</span>
       <Link
         href="https://vdesign.website"
@@ -113,7 +113,7 @@ function DesignCredit() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy;Try On Me. {new Date().getFullYear()}  All rights reserved.
+      &copy;Try On Me. {new Date().getFullYear()} All rights reserved.
     </div>
   )
 }
@@ -129,7 +129,7 @@ export function Footer() {
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex items-center">
-                    <Logo className="h-9" />
+                  <Logo className="h-9" />
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
                   <Sitemap />

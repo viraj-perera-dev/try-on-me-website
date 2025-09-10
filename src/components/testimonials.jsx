@@ -18,44 +18,44 @@ import { Heading, Subheading } from './text'
 const testimonials = [
   {
     img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    name: 'Sarah Chen',
+    title: 'Fashion Enthusiast, San Francisco',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'I used to hesitate buying clothes online, but now I can see exactly how everything looks on me before purchasing. No more returns!',
   },
   {
     img: '/testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    name: 'Marcus Rodriguez',
+    title: 'College Student, Austin',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'This changed my online shopping completely. I can try on outfits virtually and only buy what actually looks good on me.',
   },
   {
     img: '/testimonials/amy-chase.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    name: 'Emily Watson',
+    title: 'Working Professional, New York',
     quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
+      'Finally found my perfect work wardrobe! Being able to see how professional attire fits before buying saved me so much time and money.',
   },
   {
     img: '/testimonials/veronica-winton.jpg',
     name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
+    title: 'Fitness Coach, Los Angeles',
     quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
-  },
-  {
-    img: '/testimonials/dillon-lenora.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+      'As someone who works out a lot, finding clothes that fit right is crucial. This app lets me see exactly how everything fits my body type.',
   },
   {
     img: '/testimonials/harriet-arron.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    name: 'Lisa Thompson',
+    title: 'Mother of Two, Chicago',
+    quote: 'Shopping for clothes online is so much easier now. I can quickly see what works and what doesn\'t without the guesswork.',
+  },
+  {
+    img: '/testimonials/dillon-lenora.jpg',
+    name: 'Alex Johnson',
+    title: 'Fashion Blogger, Miami',
     quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
+      'This technology is incredible! I can experiment with different styles and see how they look before committing to a purchase.',
   },
 ]
 
@@ -143,19 +143,19 @@ function TestimonialCard({
   )
 }
 
+
 function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
+        Join thousands of happy customers who shop with confidence using virtual try-on technology.
       </p>
       <div className="mt-2">
         <Link
-          href="#"
+          href="https://apps.shopify.com/try-on-me"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
         >
-          Get started
+          Try it yourself
           <ArrowLongRightIcon className="size-5" />
         </Link>
       </div>
@@ -182,12 +182,12 @@ export function Testimonials() {
   return (
     <div className="overflow-hidden py-32">
       <Container>
-        <div ref={setReferenceWindowRef}>
-          <Subheading>What everyone is saying</Subheading>
-          <Heading as="h3" className="mt-2">
-            Trusted by professionals.
-          </Heading>
-        </div>
+      <div ref={setReferenceWindowRef}>
+        <Subheading>Customer Stories</Subheading>
+        <Heading as="h3" className="mt-2">
+          Loved by shoppers everywhere.
+        </Heading>
+      </div>
       </Container>
       <div
         ref={scrollRef}

@@ -1,4 +1,3 @@
-import { AnimatedNumber } from '@/components/animated-number'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
@@ -7,447 +6,198 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 
 export const metadata = {
-  title: 'Company',
+  title: 'Contact Us - Try On Me',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'Get in touch with the Try On Me team. We\'re here to help with setup, support, and any questions about our virtual try-on app.',
 }
 
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Helping companies generate revenue.</Heading>
+      <Heading as="h1">Get in touch</Heading>
       <Lead className="mt-6 max-w-3xl">
-        We’re on a mission to transform revenue organizations by harnessing vast
-        amounts of illegally acquired customer data.
+        Have questions about Try On Me? Need help with setup or want to discuss custom solutions? 
+        We're here to help you transform your Shopify store with virtual try-on technology.
       </Lead>
-      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
-        <div className="max-w-lg">
-          <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
-          <p className="mt-6 text-sm/6 text-gray-600">
-            At Radiant, we are dedicated to transforming the way revenue
-            organizations source and close deals. Our mission is to provide our
-            customers with an unfair advantage over both their competitors and
-            potential customers through insight and analysis. We’ll stop at
-            nothing to get you the data you need to close a deal.
-          </p>
-          <p className="mt-8 text-sm/6 text-gray-600">
-            We’re customer-obsessed — putting the time in to build a detailed
-            financial picture of every one of our customers so that we know more
-            about your business than you do. We are in this together, mostly
-            because we are all implicated in large-scale financial crime. In our
-            history as a company, we’ve never lost a customer, because if any
-            one of us talks, we all go down.
-          </p>
-        </div>
-        <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
-          <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
-                alt=""
-                src="/company/1.jpg"
-                className="block size-full object-cover"
-              />
-            </div>
-            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img
-                alt=""
-                src="/company/2.jpg"
-                className="block size-full object-cover"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
-                alt=""
-                src="/company/3.jpg"
-                className="block size-full object-cover"
-              />
-            </div>
-            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img
-                alt=""
-                src="/company/4.jpg"
-                className="block size-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="max-lg:mt-16 lg:col-span-1">
-          <Subheading>The Numbers</Subheading>
-          <hr className="mt-6 border-t border-gray-200" />
-          <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
-            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Raised</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                $<AnimatedNumber start={100} end={150} />M
-              </dd>
-            </div>
-            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Companies</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={15} end={30} />K
-              </dd>
-            </div>
-            <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-              <dt className="text-sm/6 text-gray-600">Deals Closed</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0.9} end={1.5} decimals={1} />M
-              </dd>
-            </div>
-            <div className="flex flex-col gap-y-2">
-              <dt className="text-sm/6 text-gray-600">Leads Generated</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={150} end={200} />M
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </section>
     </Container>
   )
 }
 
-function Person({ name, description, img }) {
-  return (
-    <li className="flex items-center gap-4">
-      <img alt="" src={img} className="size-12 rounded-full" />
-      <div className="text-sm/6">
-        <h3 className="font-medium">{name}</h3>
-        <p className="text-gray-500">{description}</p>
-      </div>
-    </li>
-  )
-}
-
-function Team() {
+function ContactInfo() {
   return (
     <Container className="mt-32">
-      <Subheading>Meet the team</Subheading>
-      <Heading as="h3" className="mt-2">
-        Founded by an all-star team.
-      </Heading>
-      <Lead className="mt-6 max-w-3xl">
-        Radiant is founded by two of the best sellers in the business and backed
-        by investors who look the other way.
-      </Lead>
-      <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
-        <div className="max-w-lg">
-          <p className="text-sm/6 text-gray-600">
-            Years ago, while working as sales associates at rival companies,
-            Thomas, Ben, and Natalie were discussing a big client they had all
-            been competing for. Joking about seeing the terms of each other’s
-            offers, they had an idea: what if they shared data to win deals and
-            split the commission behind their companies’ backs? It turned out to
-            be an incredible success, and that idea became the kernel for
-            Radiant.
-          </p>
-          <p className="mt-8 text-sm/6 text-gray-600">
-            Today, Radiant transforms revenue organizations by harnessing
-            illegally acquired customer and competitor data, using it to provide
-            extraordinary leverage. More than 30,000 companies rely on Radiant
-            to undercut their competitors and extort their customers, all
-            through a single integrated platform.
-          </p>
-          <div className="mt-6">
-            <Button className="w-full sm:w-auto" href="#">
-              Join us
+      <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+        <div>
+          <Subheading>Contact Information</Subheading>
+          <Heading as="h2" className="mt-2">
+            Let's talk about your store
+          </Heading>
+          
+          <div className="mt-8 space-y-8">
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50">
+                <svg className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-gray-900">Email</h3>
+                <p className="mt-2 text-gray-600">
+                  Send us an email and we'll get back to you within 24 hours.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-green-50">
+                <svg className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-gray-900">Response Time</h3>
+                <p className="mt-2 text-gray-600">
+                  We typically respond within 24 hours during business days. 
+                  For urgent technical support, mention "URGENT" in your subject line.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <Button href="mailto:viraj.perera.dev@gmail.com" className="w-full sm:w-auto">
+              Send us an email
             </Button>
           </div>
         </div>
-        <div className="max-lg:order-first max-lg:max-w-lg">
-          <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-            <img
-              alt=""
-              src="/company/5.jpg"
-              className="block size-full object-cover"
-            />
+
+        <div className="lg:pl-8">
+          <div className="rounded-2xl bg-gray-50 p-8">
+            <Subheading>What can we help with?</Subheading>
+            
+            <div className="mt-6 space-y-6">
+              <div>
+                <h4 className="font-medium text-gray-900">Technical Support</h4>
+                <p className="mt-2 text-sm text-gray-600">
+                  Installation help, troubleshooting, theme integration, or any technical issues.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-medium text-gray-900">Sales & Pricing</h4>
+                <p className="mt-2 text-sm text-gray-600">
+                  Questions about plans, custom pricing for high-volume stores, or enterprise features.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-medium text-gray-900">Product Feedback</h4>
+                <p className="mt-2 text-sm text-gray-600">
+                  Feature requests, suggestions, or feedback to help us improve Try On Me.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-medium text-gray-900">Partnerships</h4>
+                <p className="mt-2 text-sm text-gray-600">
+                  Agency partnerships, referral programs, or custom integrations for your clients.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Subheading as="h3" className="mt-24">
-        The team
-      </Subheading>
-      <hr className="mt-6 border-t border-gray-200" />
-      <ul
-        role="list"
-        className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        <Person
-          name="Michael Foster"
-          description="Co-Founder / CTO"
-          img="/team/michael-foster.jpg"
-        />
-        <Person
-          name="Dries Vincent"
-          description="Business Relations"
-          img="/team/dries-vincent.jpg"
-        />
-        <Person
-          name="Celeste Vandermark"
-          description="Front-end Developer"
-          img="/team/celeste-vandermark.jpg"
-        />
-        <Person
-          name="Courtney Henry"
-          description="Designer"
-          img="/team/courtney-henry.jpg"
-        />
-        <Person
-          name="Marcus Eldridge"
-          description="Director of Product"
-          img="/team/marcus-eldridge.jpg"
-        />
-        <Person
-          name="Whitney Francis"
-          description="Copywriter"
-          img="/team/whitney-francis.jpg"
-        />
-        <Person
-          name="Leonard Krasner"
-          description="Senior Designer"
-          img="/team/leonard-krasner.jpg"
-        />
-        <Person
-          name="Nolan Sheffield"
-          description="Principal Designer"
-          img="/team/nolan-sheffield.jpg"
-        />
-        <Person
-          name="Emily Selman"
-          description="VP, User Experience"
-          img="/team/emily-selman.jpg"
-        />
-      </ul>
     </Container>
   )
 }
 
-function Investors() {
+function FAQ() {
   return (
     <Container className="mt-32">
-      <Subheading>Investors</Subheading>
-      <Heading as="h3" className="mt-2">
-        Funded by industry-leaders.
-      </Heading>
-      <Lead className="mt-6 max-w-3xl">
-        We are fortunate to be backed by the best investors in the industry —
-        both literal and metaphorical partners in crime.
-      </Lead>
-      <Subheading as="h3" className="mt-24">
-        Venture Capital
-      </Subheading>
-      <hr className="mt-6 border-t border-gray-200" />
-      <ul
-        role="list"
-        className="mx-auto mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2"
-      >
-        <li>
-          <img
-            alt="Remington Schwartz"
-            src="/investors/remington-schwartz.svg"
-            className="h-14"
-          />
-          <p className="mt-6 max-w-lg text-sm/6 text-gray-500">
-            Remington Schwartz has been a driving force in the tech industry,
-            backing bold entrepreneurs who explore grey areas in financial and
-            privacy law. Their deep industry expertise and extensive political
-            lobbying provide their portfolio companies with favorable regulation
-            and direct access to lawmakers.
-          </p>
-        </li>
-        <li>
-          <img alt="Deccel" src="/investors/deccel.svg" className="h-14" />
-          <p className="mt-6 max-w-lg text-sm/6 text-gray-500">
-            Deccel has been at the forefront of innovation, investing in
-            pioneering companies across various sectors, including technology,
-            consumer goods, and healthcare. Their philosophy of ‘plausible
-            deniability’ and dedication to looking the other way have helped
-            produce some of the world’s most controversial companies.
-          </p>
-        </li>
-      </ul>
-      <Subheading as="h3" className="mt-24">
-        Individual investors
-      </Subheading>
-      <hr className="mt-6 border-t border-gray-200" />
-      <ul
-        role="list"
-        className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        <Person
-          name="Kristin Watson"
-          description="TechNexus Ventures"
-          img="/individual-investors/kristin-watson.jpg"
-        />
-        <Person
-          name="Emma Dorsey"
-          description="Innovate Capital Partners"
-          img="/individual-investors/emma-dorsey.jpg"
-        />
-        <Person
-          name="Alicia Bell"
-          description="FutureWave Investments"
-          img="/individual-investors/alicia-bell.jpg"
-        />
-        <Person
-          name="Jenny Wilson"
-          description="SynergyTech Equity"
-          img="/individual-investors/jenny-wilson.jpg"
-        />
-        <Person
-          name="Anna Roberts"
-          description="NextGen Horizons"
-          img="/individual-investors/anna-roberts.jpg"
-        />
-        <Person
-          name="Benjamin Russel"
-          description="Pioneer Digital Ventures"
-          img="/individual-investors/benjamin-russel.jpg"
-        />
-      </ul>
-    </Container>
-  )
-}
-
-function Testimonial() {
-  return (
-    <div className="relative flex aspect-square flex-col justify-end overflow-hidden rounded-3xl sm:aspect-5/4 lg:aspect-3/4">
-      <img
-        alt=""
-        src="/testimonials/veronica-winton.jpg"
-        className="absolute inset-0 object-cover"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-10% to-75% ring-1 ring-gray-950/10 ring-inset lg:from-25%"
-      />
-      <figure className="relative p-10">
-        <blockquote>
-          <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”']">
-            We&apos;ve managed to put two of our main competitors out of
-            business in 6 months.
-          </p>
-        </blockquote>
-        <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">Veronica Winton</p>
-          <p className="text-sm/6 font-medium">
-            <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              CSO, Planeteria
-            </span>
-          </p>
-        </figcaption>
-      </figure>
-    </div>
-  )
-}
-
-function Careers() {
-  return (
-    <Container className="my-32">
-      <Subheading>Careers</Subheading>
-      <Heading as="h3" className="mt-2">
-        Join our fully remote team.
-      </Heading>
-      <Lead className="mt-6 max-w-3xl">
-        We work together from all over the world, mainly from locations without
-        extradition agreements.
-      </Lead>
-      <div className="mt-24 grid grid-cols-1 gap-16 lg:grid-cols-[1fr_24rem]">
-        <div className="lg:max-w-2xl">
-          <Subheading as="h3">Open positions</Subheading>
-          <div>
-            <table className="w-full text-left">
-              <colgroup>
-                <col className="w-2/3" />
-                <col className="w-1/3" />
-                <col className="w-0" />
-              </colgroup>
-              <thead className="sr-only">
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Location</th>
-                  <th scope="col">Read more</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="colgroup" colSpan={3} className="px-0 pt-10 pb-0">
-                    <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
-                      Engineering
-                    </div>
-                  </th>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">iOS Developer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">Backend Engineer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="text-sm/6 font-normal">
-                  <td className="px-0 py-4">Product Engineer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="colgroup" colSpan={3} className="px-0 pt-5 pb-0">
-                    <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
-                      Design
-                    </div>
-                  </th>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">Principal Designer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">Designer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="text-sm/6 font-normal">
-                  <td className="px-0 py-4">Senior Designer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <div className="text-center">
+        <Subheading>Before you reach out</Subheading>
+        <Heading as="h2" className="mt-2">
+          Check our FAQ
+        </Heading>
+        <Lead className="mt-6 mx-auto max-w-2xl">
+          Many common questions are already answered in our comprehensive FAQ section.
+        </Lead>
+        
+        <div className="mt-8">
+          <Button href="/faq" variant="outline">
+            View FAQ
+          </Button>
         </div>
-        <Testimonial />
+      </div>
+      
+      <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="text-center">
+          <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-50 mx-auto">
+            <svg className="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 className="mt-4 font-medium text-gray-900">Installation</h3>
+          <p className="mt-2 text-sm text-gray-600">
+            Step-by-step guides for setting up Try On Me on your Shopify store.
+          </p>
+        </div>
+
+        <div className="text-center">
+          <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-50 mx-auto">
+            <svg className="h-6 w-6 text-orange-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 className="mt-4 font-medium text-gray-900">Pricing</h3>
+          <p className="mt-2 text-sm text-gray-600">
+            Detailed information about our plans, billing, and upgrade options.
+          </p>
+        </div>
+
+        <div className="text-center">
+          <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50 mx-auto">
+            <svg className="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.623 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h3 className="mt-4 font-medium text-gray-900">Privacy</h3>
+          <p className="mt-2 text-sm text-gray-600">
+            How we handle data, customer photos, and privacy compliance.
+          </p>
+        </div>
       </div>
     </Container>
   )
 }
 
-export default function Company() {
+function CTA() {
+  return (
+    <Container className="my-32">
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-12 text-center">
+        <Heading as="h2" className="text-3xl">
+          Ready to get started?
+        </Heading>
+        <Lead className="mt-6 mx-auto max-w-2xl">
+          Install Try On Me on your Shopify store today and start giving your customers 
+          the confidence to buy with virtual try-on technology.
+        </Lead>
+        
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="https://apps.shopify.com/try-on-me">
+            Install on Shopify
+          </Button>
+          <Button variant="outline" href="mailto:viraj.perera.dev@gmail.com">
+            Ask a Question First
+          </Button>
+        </div>
+      </div>
+    </Container>
+  )
+}
+
+export default function Contact() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
@@ -455,9 +205,9 @@ export default function Company() {
         <Navbar />
       </Container>
       <Header />
-      <Team />
-      <Investors />
-      <Careers />
+      <ContactInfo />
+      <FAQ />
+      <CTA />
       <Footer />
     </main>
   )
