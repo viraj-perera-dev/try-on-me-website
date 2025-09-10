@@ -1,6 +1,7 @@
 import { SanityLive } from '@/sanity/live'
 import { revalidateSyncTags } from '@/sanity/revalidateSyncTags'
 import '@/styles/tailwind.css'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   title: {
@@ -12,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager id="GTM-NL7MZ2CD" /> 
       <head>
         <link
           rel="stylesheet"
