@@ -14,8 +14,9 @@ import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 export const metadata = {
+  title: 'Try On Me - Virtual Try-On App for Shopify',
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'Try On Me helps you sell more by revealing sensitive information about your customers.',
 }
 
 function Hero() {
