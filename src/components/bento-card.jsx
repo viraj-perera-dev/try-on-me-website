@@ -37,19 +37,21 @@ export function BentoCard({
         )}
       </div>
       <div className="relative p-10">
-        <Subheading as="h3" dark={dark}>
-          {eyebrow}
-        </Subheading>
         <div className="flex items-center justify-start gap-2">
-          <p className="text-2xl/8 font-medium tracking-tight text-gray-950 group-data-dark:text-white">
-            {title}
-          </p>
+          <Subheading as="h3" dark={dark}>
+            {eyebrow}
+          </Subheading>
           {!available && (
             <div className="text-xs font-medium tracking-tight text-white my-auto bg-green-500 px-4 py-1 rounded-full">
               <span>Not Available yet</span>
             </div>
           )}
         </div>
+
+        <p className="text-2xl/8 font-medium tracking-tight text-gray-950 group-data-dark:text-white">
+          {title}
+        </p>
+
         <p className="mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-dark:text-gray-400">
           {description}
         </p>

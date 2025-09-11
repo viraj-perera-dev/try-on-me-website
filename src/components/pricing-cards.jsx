@@ -19,7 +19,7 @@ const tiers = [
     priceMonthly: 0,
     href: 'https://apps.shopify.com/try-on-me',
     highlights: [
-      { description: '10 try-on generations per month' },
+      { description: '7 days free trial' },
       { description: 'Works with all clothing items' },
       { description: 'Priority support', disabled: true },
     ]
@@ -28,10 +28,10 @@ const tiers = [
     name: 'Professional',
     slug: 'professional',
     description: 'Ideal for growing fashion stores.',
-    priceMonthly: 29.99,
+    priceMonthly: 59.99,
     href: 'https://apps.shopify.com/try-on-me',
     highlights: [
-      { description: '100 try-on generations per month' },
+      { description: 'Unlimited try-on generations' },
       { description: 'Works with all clothing items' },
       { description: 'Priority support', disabled: false },
     ]
@@ -40,12 +40,13 @@ const tiers = [
     name: 'Enterprise',
     slug: 'enterprise',
     description: 'For high-volume stores and agencies.',
-    priceMonthly: 59.99,
-    href: 'https://apps.shopify.com/try-on-me',
+    href: '/contact',
+    priceMonthly: null,
     highlights: [
-      { description: 'Unlimited try-on generations' },
-      { description: 'Works with all clothing items' },
-      { description: 'Priority support', disabled: false },
+      { description: "Unlimited virtual try-ons" },
+      { description: "Custom plugin tailored for your store" },
+      { description: "Image labeling with your brand logo" },
+      { description: "Priority support" },
     ]
   },
 ]
@@ -74,16 +75,29 @@ function PricingCard({ tier }) {
           <Subheading>{tier.name}</Subheading>
           <p className="mt-2 text-sm/6 text-gray-950/75">{tier.description}</p>
           <div className="mt-8 flex items-center gap-4">
-            <div className="text-5xl font-medium text-gray-950">
-              ${tier.priceMonthly}
-            </div>
-            <div className="text-sm/5 text-gray-950/75">
-              <p>USD</p>
-              <p>per month</p>
-            </div>
+            {tier.priceMonthly !== null ? (
+              <>
+                <div className="text-5xl font-medium text-gray-950">
+                  {tier.priceMonthly}
+                </div>
+                <div className="text-sm/5 text-gray-950/75">
+                  <p>USD</p>
+                  <p>per month</p>
+                </div>
+              </>
+            ) : (
+              <div className="text-3xl font-medium text-gray-800">
+                Custom pricing
+              </div>
+            )}
+
           </div>
           <div className="mt-8">
-            <Button href={tier.href}>Start a free trial</Button>
+            {tier.priceMonthly !== null ? (
+              <Button href={tier.href}>Start a free trial</Button>
+            ) : (
+              <Button href={tier.href}>Contact us</Button>
+            )}
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">
