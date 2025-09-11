@@ -152,7 +152,7 @@ function CallToAction() {
       </p>
       <div className="mt-2">
         <Link
-          href="https://apps.shopify.com/try-on-me"
+          href="https://admin.shopify.com/?organization_id=181883178&no_redirect=true&redirect=/oauth/redirect_from_developer_dashboard?client_id%3D22009a5fdc898eb6daa2a853325a0594"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
         >
           Try it yourself

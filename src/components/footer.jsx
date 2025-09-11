@@ -24,7 +24,7 @@ function CallToAction() {
       <div className="mt-6">
         <Button
           className="w-full sm:w-auto"
-          href="https://apps.shopify.com/try-on-me"
+          href="https://admin.shopify.com/?organization_id=181883178&no_redirect=true&redirect=/oauth/redirect_from_developer_dashboard?client_id%3D22009a5fdc898eb6daa2a853325a0594"
         >
           Install on Shopify
         </Button>

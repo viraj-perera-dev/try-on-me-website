@@ -185,7 +185,7 @@ function CTA() {
         </Lead>
         
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="https://apps.shopify.com/try-on-me">
+          <Button href="https://admin.shopify.com/?organization_id=181883178&no_redirect=true&redirect=/oauth/redirect_from_developer_dashboard?client_id%3D22009a5fdc898eb6daa2a853325a0594">
             Install on Shopify
           </Button>
           <Button variant="outline" href="mailto:viraj.perera.dev@gmail.com">

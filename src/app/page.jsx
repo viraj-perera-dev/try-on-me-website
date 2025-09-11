@@ -36,7 +36,7 @@ function Hero() {
           }
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-          <h1 className="font-display text-6xl/[0.9] tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-5xl/[0.9] tracking-tight text-balance text-gray-950 sm:text-6xl/[0.8] md:text-7xl/[0.8]">
             Try before you buy.
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -45,7 +45,7 @@ function Hero() {
             experience.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://apps.shopify.com/try-on-me">
+            <Button href="https://admin.shopify.com/?organization_id=181883178&no_redirect=true&redirect=/oauth/redirect_from_developer_dashboard?client_id%3D22009a5fdc898eb6daa2a853325a0594">
               Install on Shopify
             </Button>
             <Button variant="secondary" href="#demo">

@@ -17,7 +17,7 @@ const tiers = [
     slug: 'free',
     description: 'Perfect for small stores getting started.',
     priceMonthly: 0,
-    href: 'https://apps.shopify.com/try-on-me',
+    href: 'https://admin.shopify.com/?organization_id=181883178&no_redirect=true&redirect=/oauth/redirect_from_developer_dashboard?client_id%3D22009a5fdc898eb6daa2a853325a0594',
     highlights: [
       { description: '7 days free trial' },
       { description: 'Works with all clothing items' },
@@ -29,7 +29,7 @@ const tiers = [
     slug: 'professional',
     description: 'Ideal for growing fashion stores.',
     priceMonthly: 59.99,
-    href: 'https://apps.shopify.com/try-on-me',
+    href: 'https://admin.shopify.com/?organization_id=181883178&no_redirect=true&redirect=/oauth/redirect_from_developer_dashboard?client_id%3D22009a5fdc898eb6daa2a853325a0594',
     highlights: [
       { description: 'Unlimited try-on generations' },
       { description: 'Works with all clothing items' },
