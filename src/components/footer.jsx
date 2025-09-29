@@ -14,7 +14,7 @@ function CallToAction() {
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
           Ready to transform your store?
           <br />
-          Install Try On Me today.
+          Install Vestime today.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
@@ -113,7 +113,7 @@ function DesignCredit() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy;Try On Me. {new Date().getFullYear()} All rights reserved.
+      &copy;Vestime. {new Date().getFullYear()} All rights reserved.
     </div>
   )
 }

@@ -25,9 +25,9 @@ import dayjs from 'dayjs'
 import { notFound } from 'next/navigation'
 
 export const metadata = {
-  title: 'Blog - Try On Me',
+  title: 'Blog - Vestime',
   description:
-    'Try On Me Blog',
+    'Vestime Blog',
 }
 
 const postsPerPage = 5

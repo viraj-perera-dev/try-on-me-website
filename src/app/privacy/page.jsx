@@ -5,8 +5,8 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 
 export const metadata = {
-  title: 'Privacy Policy - Try On Me',
-  description: 'Privacy Policy for Try On Me virtual try-on app for Shopify stores.',
+  title: 'Privacy Policy - Vestime',
+  description: 'Privacy Policy for Vestime virtual try-on app for Shopify stores.',
 }
 
 function PolicySection({ title, children }) {
@@ -25,7 +25,7 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Privacy Policy</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Your privacy is important to us. This Privacy Policy explains how Try On Me collects, uses, and protects your information when you use our virtual try-on application.
+        Your privacy is important to us. This Privacy Policy explains how Vestime collects, uses, and protects your information when you use our virtual try-on application.
       </Lead>
       <div className="mt-8 text-sm text-gray-500">
         <p><strong>Last updated:</strong> September 10, 2025</p>
@@ -41,7 +41,7 @@ function PrivacyContent() {
       <div className="max-w-4xl">
         <PolicySection title="1. Who We Are">
           <p>
-            Try On Me is a virtual try-on application for Shopify stores, developed by Viraj Perera. 
+            Vestime is a virtual try-on application for Shopify stores, developed by Viraj Perera. 
             We enable customers to virtually try on clothing and accessories using AI-powered technology.
           </p>
           <p>
@@ -159,7 +159,7 @@ function PrivacyContent() {
             <li><strong>Non-Discrimination:</strong> Not receive discriminatory treatment for exercising these rights</li>
           </ul>
 
-          <p><strong>To Exercise Your Rights:</strong> Contact us at privacy@tryonme.app with your request.</p>
+          <p><strong>To Exercise Your Rights:</strong> Contact us at viraj.perera.dev@gmail.com with your request.</p>
         </PolicySection>
 
         <PolicySection title="9. International Data Transfers">

@@ -14,9 +14,9 @@ import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 export const metadata = {
-  title: 'Try On Me - Virtual Try-On App for Shopify',
+  title: 'Vestime - Virtual Try-On App for Shopify',
   description:
-    'Try On Me helps you sell more by revealing sensitive information about your customers.',
+    'Vestime helps you sell more by revealing sensitive information about your customers.',
 }
 
 function Hero() {
@@ -185,9 +185,9 @@ export default function Home() {
       </main>
       <Container className="mt-20">
         <div>
-          <Subheading>What everyone is saying</Subheading>
+          <Subheading>Choose the perfect plan for your store.</Subheading>
           <Heading as="h3" className="mt-2">
-            Trusted by professionals.
+          Simple, transparent pricing
           </Heading>
         </div>
       </Container>

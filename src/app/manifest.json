@@ -1,6 +1,6 @@
 {
-  "name": "Try On Me",
-  "short_name": "TryOnMe",
+  "name": "Vestime",
+  "short_name": "vestime",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

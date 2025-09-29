@@ -6,9 +6,9 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 
 export const metadata = {
-  title: 'Contact Us - Try On Me',
+  title: 'Contact Us - Vestime',
   description:
-    'Get in touch with the Try On Me team. We\'re here to help with setup, support, and any questions about our virtual try-on app.',
+    'Get in touch with the Vestime team. We\'re here to help with setup, support, and any questions about our virtual try-on app.',
 }
 
 function Header() {
@@ -16,7 +16,7 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Get in touch</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Have questions about Try On Me? Need help with setup or want to discuss custom solutions? 
+        Have questions about Vestime? Need help with setup or want to discuss custom solutions? 
         We're here to help you transform your Shopify store with virtual try-on technology.
       </Lead>
     </Container>
@@ -93,7 +93,7 @@ function ContactInfo() {
               <div>
                 <h4 className="font-medium text-gray-900">Product Feedback</h4>
                 <p className="mt-2 text-sm text-gray-600">
-                  Feature requests, suggestions, or feedback to help us improve Try On Me.
+                  Feature requests, suggestions, or feedback to help us improve Vestime.
                 </p>
               </div>
 
@@ -140,7 +140,7 @@ function FAQ() {
           </div>
           <h3 className="mt-4 font-medium text-gray-900">Installation</h3>
           <p className="mt-2 text-sm text-gray-600">
-            Step-by-step guides for setting up Try On Me on your Shopify store.
+            Step-by-step guides for setting up Vestime on your Shopify store.
           </p>
         </div>
 
@@ -180,7 +180,7 @@ function CTA() {
           Ready to get started?
         </Heading>
         <Lead className="mt-6 mx-auto max-w-2xl">
-          Install Try On Me on your Shopify store today and start giving your customers 
+          Install Vestime on your Shopify store today and start giving your customers 
           the confidence to buy with virtual try-on technology.
         </Lead>
         

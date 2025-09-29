@@ -6,9 +6,9 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 
 export const metadata = {
-  title: 'Frequently Asked Questions - Try On Me',
+  title: 'Frequently Asked Questions - Vestime',
   description:
-    'Find answers to common questions about Try On Me virtual try-on app for Shopify stores.',
+    'Find answers to common questions about Vestime virtual try-on app for Shopify stores.',
 }
 
 function FAQItem({ question, children, id }) {
@@ -27,7 +27,7 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Frequently Asked Questions</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Everything you need to know about Try On Me virtual try-on app for your Shopify store.
+        Everything you need to know about Vestime virtual try-on app for your Shopify store.
         Can't find what you're looking for? Contact our support team.
       </Lead>
       <div className="mt-8">
@@ -49,14 +49,14 @@ function GettingStarted() {
       
       <div className="mt-12">
         <FAQItem 
-          question="How do I install Try On Me on my Shopify store?"
+          question="How do I install Vestime on my Shopify store?"
           id="installation"
         >
           <p>
-            Installing Try On Me is simple and takes just a few minutes:
+            Installing Vestime is simple and takes just a few minutes:
           </p>
           <ol className="list-decimal ml-6 space-y-2">
-            <li>Visit the Shopify App Store and search for "Try On Me"</li>
+            <li>Visit the Shopify App Store and search for "Vestime"</li>
             <li>Click "Install app" and authorize the required permissions</li>
             <li>The app will automatically integrate with your product pages</li>
             <li>Customize the button appearance in the app settings</li>
@@ -68,11 +68,11 @@ function GettingStarted() {
         </FAQItem>
 
         <FAQItem 
-          question="Does Try On Me work with all Shopify themes?"
+          question="Does Vestime work with all Shopify themes?"
           id="theme-compatibility"
         >
           <p>
-            Yes! Try On Me is designed to work seamlessly with all Shopify themes, including:
+            Yes! Vestime is designed to work seamlessly with all Shopify themes, including:
           </p>
           <ul className="list-disc ml-6 space-y-1">
             <li>Free Shopify themes (Dawn, Craft, Colorblock, etc.)</li>
@@ -90,7 +90,7 @@ function GettingStarted() {
           id="product-compatibility"
         >
           <p>
-            Try On Me works exceptionally well with:
+            Vestime works exceptionally well with:
           </p>
           <ul className="list-disc ml-6 space-y-1">
             <li><strong>Clothing:</strong> Shirts, dresses, jackets, sweaters, pants</li>
@@ -268,7 +268,7 @@ function PricingSupport() {
             <li>Reactivate anytime with one click</li>
           </ul>
           <p>
-            Cancel through the Shopify admin panel under Apps &gt; Try On Me &gt; Settings &gt; Billing.
+            Cancel through the Shopify admin panel under Apps &gt; Vestime &gt; Settings &gt; Billing.
           </p>
         </FAQItem>
       </div>
@@ -309,7 +309,7 @@ function TechnicalPrivacy() {
           id="compliance"
         >
           <p>
-            Yes, Try On Me is fully compliant with major privacy regulations:
+            Yes, Vestime is fully compliant with major privacy regulations:
           </p>
           <ul className="list-disc ml-6 space-y-1">
             <li><strong>GDPR:</strong> European Union data protection compliance</li>
@@ -355,11 +355,11 @@ function Performance() {
       
       <div className="mt-12">
         <FAQItem 
-          question="What results can I expect from using Try On Me?"
+          question="What results can I expect from using Vestime?"
           id="expected-results"
         >
           <p>
-            Based on data from thousands of stores using Try On Me:
+            Based on data from thousands of stores using Vestime:
           </p>
           <div className="bg-gray-50 p-6 rounded-lg mt-4">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -387,7 +387,7 @@ function Performance() {
           id="performance-impact"
         >
           <p>
-            Try On Me is optimized for performance and won't slow down your store:
+            Vestime is optimized for performance and won't slow down your store:
           </p>
           <ul className="list-disc ml-6 space-y-1">
             <li><strong>Lightweight:</strong> Less than 50KB added to page load</li>
@@ -417,7 +417,7 @@ function Performance() {
             <strong>Coming Soon:</strong> We're developing comprehensive analytics including conversion tracking, customer insights, ROI reports, and usage patterns. These advanced features will be available in future updates for Professional and Enterprise plans.
           </p>
           <p>
-            For now, you can measure success through your existing Shopify analytics by monitoring overall conversion rates and return rates after implementing Try On Me.
+            For now, you can measure success through your existing Shopify analytics by monitoring overall conversion rates and return rates after implementing Vestime.
           </p>
         </FAQItem>
       </div>
